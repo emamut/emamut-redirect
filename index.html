@@ -1,80 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redireccionando...</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redireccionando...</title>
 
-  <!-- URL de destino: reemplaza https://ejemplo.com por tu URL -->
-  <!-- 1. Redirección mediante Meta Refresh (respaldo si JS está deshabilitado y para buscadores) -->
-  <meta http-equiv="refresh" content="0; url=https://ejemplo.com">
-  <link rel="canonical" href="https://ejemplo.com">
+    <!-- URL de destino: reemplaza https://ejemplo.com por tu URL -->
+    <!-- 1. Redirección mediante Meta Refresh (respaldo si JS está deshabilitado y para buscadores) -->
+    <meta http-equiv="refresh" content="0; url=https://emamut.com.co" />
+    <link rel="canonical" href="https://emamut.com.co" />
 
-  <!-- 2. Redirección inmediata mediante JavaScript -->
-  <script>
-    // Usamos location.replace para que la página intermedia no quede atrapada en el botón 'Atrás' del historial
-    window.location.replace("https://ejemplo.com");
-  </script>
+    <!-- 2. Redirección inmediata mediante JavaScript -->
+    <script>
+      // Usamos location.replace para que la página intermedia no quede atrapada en el botón 'Atrás' del historial
+      window.location.replace('https://emamut.com.co');
+    </script>
 
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-      background-color: #f8fafc;
-      color: #334155;
-      text-align: center;
-      padding: 1.5rem;
-      box-sizing: border-box;
-    }
-    .card {
-      background: #ffffff;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-      max-width: 450px;
-      width: 100%;
-    }
-    .spinner {
-      width: 32px;
-      height: 32px;
-      border: 3px solid #e2e8f0;
-      border-top-color: #2563eb;
-      border-radius: 50%;
-      animation: spin 0.8s linear infinite;
-      margin: 0 auto 1.5rem auto;
-    }
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-    a {
-      color: #2563eb;
-      text-decoration: underline;
-      font-weight: 500;
-      word-break: break-all;
-    }
-    a:hover {
-      color: #1d4ed8;
-    }
-    p {
-      margin: 0.5rem 0;
-      line-height: 1.5;
-    }
-    .help-text {
-      font-size: 0.875rem;
-      color: #64748b;
-      margin-top: 1rem;
-    }
-  </style>
-</head>
-<body>
-  <div class="card">
-    <div class="spinner" aria-hidden="true"></div>
-    <p>Redireccionando a <a href="https://ejemplo.com" id="target-link">https://ejemplo.com</a>...</p>
-    <p class="help-text">Si no eres redirigido automáticamente en unos segundos, haz clic en el enlace superior.</p>
-  </div>
-</body>
+    <style>
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          Roboto,
+          sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #f8fafc;
+        color: #334155;
+        text-align: center;
+        padding: 1.5rem;
+        box-sizing: border-box;
+      }
+      .card {
+        background: #ffffff;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow:
+          0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        max-width: 450px;
+        width: 100%;
+      }
+      .spinner {
+        width: 32px;
+        height: 32px;
+        border: 3px solid #e2e8f0;
+        border-top-color: #2563eb;
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+        margin: 0 auto 1.5rem auto;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      a {
+        color: #2563eb;
+        text-decoration: underline;
+        font-weight: 500;
+        word-break: break-all;
+      }
+      a:hover {
+        color: #1d4ed8;
+      }
+      p {
+        margin: 0.5rem 0;
+        line-height: 1.5;
+      }
+      .help-text {
+        font-size: 0.875rem;
+        color: #64748b;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="spinner" aria-hidden="true"></div>
+      <p>
+        Redireccionando a
+        <a href="https://emamut.com.co" id="target-link">https://ejemplo.com</a
+        >...
+      </p>
+      <p class="help-text">
+        Si no eres redirigido automáticamente en unos segundos, haz clic en el
+        enlace superior.
+      </p>
+    </div>
+  </body>
 </html>
